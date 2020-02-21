@@ -23,7 +23,16 @@ namespace ProductTest.Controllers
     
     public async Task<IActionResult> UploadSku(List<SkuTest> skus)
     {
-      await _bulk.Upload(skus);
+      await _bulk.UploadSku(skus);
+      return StatusCode(201);
+    }
+
+    // localhost:5000/api/upload/pattern
+    [HttpPost("pattern")]
+    
+    public async Task<IActionResult> UploadPattern(List<PatternTest> patterns)
+    {
+      await _bulk.UploadPattern(patterns);
       return StatusCode(201);
     }
 

@@ -7,5 +7,6 @@ namespace ProductTest.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options){}
         public DbSet<SkuTest> Skus { get; set; }
+        public DbSet<PatternTest> Patterns { get; set; }
     }
 }

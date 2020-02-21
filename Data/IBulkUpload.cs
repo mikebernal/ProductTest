@@ -6,6 +6,7 @@ namespace ProductTest.Data
 {
     public interface IBulkUpload
     {
-        Task<List<SkuTest>> Upload(List<SkuTest> skus);
+        Task<List<SkuTest>> UploadSku(List<SkuTest> skus);
+        Task<List<PatternTest>> UploadPattern(List<PatternTest> patterns);
     }
 }
