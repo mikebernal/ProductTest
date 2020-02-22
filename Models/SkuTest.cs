@@ -6,22 +6,22 @@ namespace ProductTest.Models
         public string BrandTitle { get; set; }
         public string PatternTitle { get; set; }
         public string Sku { get; set; }
-        public string Width { get; set; }
-        public string AspectRatio { get; set; }
-        public string RimSize { get; set; }
-        public string LoadRating1 { get; set; }
-        public string LoadRating2 { get; set; }
-        public char Speed { get; set; }
+        public int Width { get; set; }
+        public int AspectRatio { get; set; }
+        public int RimSize { get; set; }
+        public int LoadRating1 { get; set; }
+        public int LoadRating2 { get; set; }
+        public string Speed { get; set; }
         public string Description { get; set; }
-        public string Active { get; set; }
+        public bool Active { get; set; }
         public string Homologation1 { get; set; }
         public string Homologation2 { get; set; }
-        public string RunFlat { get; set; }
-        public string MOE { get; set; }
-        public string SUV { get; set; }
-        public string Seal { get; set; }
-        public string NoiseCancelling { get; set; }
-        public string LightTruck { get; set; }
-        public string Commercial { get; set; }
+        public bool RunFlat { get; set; }
+        public bool MOE { get; set; }
+        public bool SUV { get; set; }
+        public bool Seal { get; set; }
+        public bool NoiseCancelling { get; set; }
+        public bool LightTruck { get; set; }
+        public bool Commercial { get; set; }
     }
 }

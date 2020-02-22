@@ -8,14 +8,28 @@ using ProductTest.Data;
 namespace ProductTest.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200221153910_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20200222172847_initialCreate")]
+    partial class initialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.0");
+
+            modelBuilder.Entity("ProductTest.Models.BooleanTest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BooleanTests");
+                });
 
             modelBuilder.Entity("ProductTest.Models.PatternTest", b =>
                 {
@@ -109,17 +123,17 @@ namespace ProductTest.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Active")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("Active")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("AspectRatio")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("AspectRatio")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("BrandTitle")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Commercial")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("Commercial")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
@@ -130,48 +144,65 @@ namespace ProductTest.Migrations
                     b.Property<string>("Homologation2")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("LightTruck")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("LightTruck")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("LoadRating1")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("LoadRating1")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("LoadRating2")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("LoadRating2")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("MOE")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("MOE")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("NoiseCancelling")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("NoiseCancelling")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("PatternTitle")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("RimSize")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("RimSize")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("RunFlat")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("RunFlat")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("SUV")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("SUV")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Seal")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("Seal")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Sku")
                         .HasColumnType("TEXT");
 
-                    b.Property<char>("Speed")
+                    b.Property<string>("Speed")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Width")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Width")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
                     b.ToTable("Skus");
+                });
+
+            modelBuilder.Entity("ProductTest.Models.Test", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tests");
                 });
 #pragma warning restore 612, 618
         }

@@ -14,6 +14,20 @@ namespace ProductTest.Data
       _context = context;
     }
 
+    public async Task<List<BooleanTest>> Bool(List<BooleanTest> bools)
+    {
+      await _context.BooleanTests.AddRangeAsync(bools);
+      await _context.SaveChangesAsync();
+      return bools;
+    }
+
+    public async Task<List<Test>> Testing(List<Test> tests)
+    {
+      await _context.Tests.AddRangeAsync(tests);
+      await _context.SaveChangesAsync();
+      return tests;
+    }
+
     public async Task<List<PatternTest>> UploadPattern(List<PatternTest> patterns)
     {
       var existingPatterns = await _context.Patterns.Where(x => x.Title == x.Title).ToListAsync();
