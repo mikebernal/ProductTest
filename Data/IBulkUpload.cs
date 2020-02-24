@@ -8,5 +8,7 @@ namespace ProductTest.Data
     {
         Task<List<SkuTest>> UploadSku(List<SkuTest> skus);
         Task<List<PatternTest>> UploadPattern(List<PatternTest> patterns);
+        Task<List<Test>> Testing(List<Test> test);
+        Task<List<BooleanTest>> Bool(List<BooleanTest> bools);
     }
 }

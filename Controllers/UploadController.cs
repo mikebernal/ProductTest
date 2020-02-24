@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductTest.Data;
 using ProductTest.Models;
@@ -33,6 +35,26 @@ namespace ProductTest.Controllers
     public async Task<IActionResult> UploadPattern(List<PatternTest> patterns)
     {
       await _bulk.UploadPattern(patterns);
+      return StatusCode(201);
+    }
+
+    // https://localhost:5000/api/upload/test
+    [HttpPost("test")]
+    
+    public async Task<IActionResult> Testing(List<Test> tests)
+    {
+      var serialized = Newtonsoft.Json.JsonConvert.SerializeObject(tests);
+      var deseriliazed = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Test>>(serialized);
+      await _bulk.Testing(tests);
+      return StatusCode(201);
+    }
+
+    // https://localhost:5000/api/upload/bool
+    [HttpPost("bool")]
+    
+    public async Task<IActionResult> Bool(List<BooleanTest> bools)
+    {
+      await _bulk.Bool(bools);
       return StatusCode(201);
     }
 
