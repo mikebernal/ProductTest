@@ -50,3 +50,7 @@ C:\Users\mike\projects\ProductTest\bin\Debug\netcoreapp3.1\System.ServiceModel.P
 C:\Users\mike\projects\ProductTest\bin\Debug\netcoreapp3.1\System.ServiceModel.dll
 C:\Users\mike\projects\ProductTest\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
 C:\Users\mike\projects\ProductTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\mike\projects\ProductTest\obj\Debug\netcoreapp3.1\ProductTest.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mike\projects\ProductTest\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\mike\projects\ProductTest\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\mike\projects\ProductTest\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

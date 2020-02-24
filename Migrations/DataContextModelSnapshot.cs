@@ -36,35 +36,36 @@ namespace ProductTest.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Active")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("Active")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("AllSeason")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("AllSeason")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("AllTerrain")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("AllTerrain")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("BrandTitle")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ColourSmoke")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("ColourSmoke")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Eco")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("Eco")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Features")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("HeavyAllTerrain")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("HeavyAllTerrain")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("HigherMilage")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("HigherMileage")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("HighwayTerrain")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("HighwayTerrain")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Images")
                         .HasColumnType("TEXT");
@@ -72,44 +73,45 @@ namespace ProductTest.Migrations
                     b.Property<string>("Key")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("LowerNoise")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("LowerNoise")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("MudTerrain")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("MudTerrain")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Overview")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Performance")
+                    b.Property<bool?>("Performance")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool?>("QualityCategory")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("SalesHookLine")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("QualityCategory")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("Segment")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("SalesHook")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("SemiSlick")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Segment")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("SemiSlick")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Synonyms")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("Synonyms")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Touring")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("Touring")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("TreadType")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("TreadType")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("UltraHighPerformance")
-                        .HasColumnType("TEXT");
+                    b.Property<bool?>("UltraHighPerformance")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
