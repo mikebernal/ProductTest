@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "ProductTest/1.0.0": {
         "dependencies": {
-          "EventStore.Client": "5.0.5",
+          "EventStore.Client": "5.0.6",
           "FluentValidation.AspNetCore": "8.6.1",
           "Microsoft.EntityFrameworkCore": "3.1.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.0",
@@ -319,7 +319,7 @@
           "ProductTest.dll": {}
         }
       },
-      "EventStore.Client/5.0.5": {
+      "EventStore.Client/5.0.6": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
           "System.Net.Http": "4.3.4",
@@ -329,8 +329,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/EventStore.ClientAPI.dll": {
-            "assemblyVersion": "5.0.5.0",
-            "fileVersion": "5.0.5.0"
+            "assemblyVersion": "5.0.6.0",
+            "fileVersion": "5.0.6.0"
           }
         },
         "compile": {
@@ -2960,12 +2960,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EventStore.Client/5.0.5": {
+    "EventStore.Client/5.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jgnT8x6Z9kD1NcRpOTx2gGe9dXvJRh4cddrq4Qq7NUcYBTKTZC98R8p0BfTxqsBPgG2DRKVd1wpDCnbxY5aKvg==",
-      "path": "eventstore.client/5.0.5",
-      "hashPath": "eventstore.client.5.0.5.nupkg.sha512"
+      "sha512": "sha512-k3rNYGokr4bg0eIawSzNuVY2l75dD2WAXaVlTEOOMKsGZNlAiGNhsdGmFOFb/UEdcVDc3TiuEPfViv2EywdC4g==",
+      "path": "eventstore.client/5.0.6",
+      "hashPath": "eventstore.client.5.0.6.nupkg.sha512"
     },
     "FluentValidation/8.6.1": {
       "type": "package",

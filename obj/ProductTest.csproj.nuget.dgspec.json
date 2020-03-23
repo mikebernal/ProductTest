@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj": {}
+    "C:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj": {}
   },
   "projects": {
-    "c:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj": {
+    "C:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
         "projectName": "ProductTest",
-        "projectPath": "c:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
+        "projectPath": "C:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\mike\\projects\\ProductTest\\obj\\",
+        "outputPath": "C:\\Users\\mike\\projects\\ProductTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,7 +43,7 @@
           "dependencies": {
             "EventStore.Client": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",

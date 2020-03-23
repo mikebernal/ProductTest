@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductTest.Data;
 using ProductTest.Models;
+
+using EventStore.ClientAPI;
+using EventStore.ClientAPI.SystemData;
 
 namespace ProductTest.Controllers
 {
@@ -15,6 +20,8 @@ namespace ProductTest.Controllers
   public class UploadController : ControllerBase
   {
     private readonly IBulkUpload _bulk;
+    private SkuValidator _skuValidator;
+
     public UploadController(IBulkUpload bulk)
     {
       _bulk = bulk;
@@ -25,6 +32,17 @@ namespace ProductTest.Controllers
     
     public async Task<IActionResult> UploadSku(List<SkuTest> skus)
     {
+      for (var i = 0; i < skus.Count; i++) {
+        _skuValidator = new SkuValidator();
+        ValidationResult result = _skuValidator.Validate(skus[i]);
+        if (! result.IsValid) {
+            foreach(var failure in result.Errors) {
+                Console.WriteLine("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
+            }
+            return StatusCode(400);
+        }
+      }
+
       await _bulk.UploadSku(skus);
       return StatusCode(201);
     }

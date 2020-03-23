@@ -9,7 +9,7 @@ using ProductTest.Data;
 namespace ProductTest.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200224160920_initialCreate")]
+    [Migration("20200225031433_initialCreate")]
     partial class initialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

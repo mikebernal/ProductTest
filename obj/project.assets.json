@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "EventStore.Client/5.0.5": {
+      "EventStore.Client/5.0.6": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -1477,14 +1477,14 @@
     }
   },
   "libraries": {
-    "EventStore.Client/5.0.5": {
-      "sha512": "jgnT8x6Z9kD1NcRpOTx2gGe9dXvJRh4cddrq4Qq7NUcYBTKTZC98R8p0BfTxqsBPgG2DRKVd1wpDCnbxY5aKvg==",
+    "EventStore.Client/5.0.6": {
+      "sha512": "k3rNYGokr4bg0eIawSzNuVY2l75dD2WAXaVlTEOOMKsGZNlAiGNhsdGmFOFb/UEdcVDc3TiuEPfViv2EywdC4g==",
       "type": "package",
-      "path": "eventstore.client/5.0.5",
+      "path": "eventstore.client/5.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "eventstore.client.5.0.5.nupkg.sha512",
+        "eventstore.client.5.0.6.nupkg.sha512",
         "eventstore.client.nuspec",
         "lib/net452/EventStore.ClientAPI.dll",
         "lib/net452/EventStore.ClientAPI.xml",
@@ -4844,7 +4844,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "EventStore.Client >= 5.0.5",
+      "EventStore.Client >= 5.0.6",
       "FluentValidation.AspNetCore >= 8.6.1",
       "Microsoft.EntityFrameworkCore >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
@@ -4858,11 +4858,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
+      "projectUniqueName": "c:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
       "projectName": "ProductTest",
-      "projectPath": "C:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
+      "projectPath": "c:\\Users\\mike\\projects\\ProductTest\\ProductTest.csproj",
       "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mike\\projects\\ProductTest\\obj\\",
+      "outputPath": "c:\\Users\\mike\\projects\\ProductTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4894,7 +4894,7 @@
         "dependencies": {
           "EventStore.Client": {
             "target": "Package",
-            "version": "[5.0.5, )"
+            "version": "[5.0.6, )"
           },
           "FluentValidation.AspNetCore": {
             "target": "Package",
